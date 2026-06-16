@@ -58,7 +58,22 @@ console.log(arr);
 
 console.log(user.hasOwnProperty("user"));
 
+// OBJECT DESTRUCTURIMNG IN JAVA SCRIPT
 
+const course ={
+    course_name:"learnig java",
+    course_instructor:"ravi barde",
+    course_fees:"5000"
+}
+
+console.log(course.course_name); //generally we access object property like this.
+
+const{course_name,course_instructor,course_fees}=course // de-structued object
+console.log(course_name);
+
+const {course_name:c_name, course_instructor:ci}=course
+console.log(c_name);
+console.log(ci);
 
 
 
