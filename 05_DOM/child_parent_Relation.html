@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Parent Child Relation</title>
+</head>
+<body style="background-color: #232323;color:#fff;">
+    <div class="Parent">
+        <div class="Day">Monday</div>
+        <div class="Day">Tuesday</div>
+        <div class="Day">Wednesday</div>
+        <div class="Day">Thursday</div>
+    </div>
+</body>
+<style>
+    .Day{
+        padding:15px;
+        background-color: orange;
+        border-radius: 15px;
+        border-color: #fff;
+        border-width: 30px;
+    }
+</style>
+<script>
+    const divv=document.querySelector('.Parent')
+    console.log(divv.children);
+    console.log(divv);
+    console.log(divv.firstChild);
+    console.log(divv.lastElementChild);
+    console.log(divv.lastChild)
+    console.log(divv.children[2].innerHTML)
+
+    const day=document.querySelector('.Day')
+    console.log(day.parentElement)
+    console.log(day.nextElementSibling)
+    
+
+    for(i=0;i<divv.children.length;i++){
+        console.log(divv.children[i].innerHTML)
+    }
+</script>
+</html>
