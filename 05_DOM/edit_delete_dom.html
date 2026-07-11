@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and Delete in Dom</title>
+</head>
+<body class="head" style="background-color: black;color:white">
+    <h1 id="145" style="background-color: greenyellow;color:orange; padding: 15px;
+    border-radius: 20px;">My name is Rushikesh</h1>
+    <ul class="list">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    const select=document.querySelector('h1')
+    const heading=document.createElement('h1')
+    heading.append(document.createTextNode("My name is Jeevan"))
+    select.replaceWith(heading)
+    const nextselect=document.querySelector('h1')
+    heading.remove()
+
+    
+    function subject(subname){
+        const li=document.querySelector('.list')
+        const list=document.createElement('li')
+        list.append(document.createTextNode(subname))
+        li.appendChild(list)
+    }
+    subject("java")
+    subject("python")
+    subject("bootstrap")
+    subject("android")
+
+    const replacelist=document.querySelector("li:nth-child(2)")
+    const newlist=document.createElement('li')
+    newlist.append(document.createTextNode("CSS"))
+    replacelist.replaceWith(newlist)
+
+    const selected_element=document.querySelector("li:nth-child(4)")
+    selected_element.remove()
+
+</script>
+</html>
