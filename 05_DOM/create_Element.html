@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Learning Creating an Element</title>
+</head>
+<body class="heading">
+    <h1>hello world</h1>
+</body>
+<style>
+    .heading{
+        background-color: #232323;
+        color:#fff;
+    }
+</style>
+<script>
+    const div=document.createElement("div");
+    div.append(document.createTextNode("hello Anuj"));
+    document.body.append(div);
+    div.id=Math.round(Math.random()*10)
+    div.className="div"
+    div.style.backgroundColor="green"
+    div.style.color="orange"
+
+    const head=document.createElement("h3")
+    head.innerText="Welcome jeevan"
+    document.body.appendChild(head)
+    head.style.backgroundColor="orange"
+    head.style.padding="20px"
+    head.style.borderRadius="15px"
+</script>
+</html>
