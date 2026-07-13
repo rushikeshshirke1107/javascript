@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 10px;
+}
+#height{
+    background-color: antiquewhite;
+}
+#weight{
+    background-color: antiquewhite;
+}
